@@ -7,6 +7,7 @@ import FilterPanel from './components/FilterPanel';
 
 import AddTodo from './containers/AddTodo';
 import VisibleTodoList from './containers/VisibleTodoList';
+import OpenTodoFormButton from './components/OpenTodoFormButton';
 
 class App extends Component {
   render() {
@@ -15,6 +16,7 @@ class App extends Component {
         <SimpleAppBar />
         <FilterPanel />
         <VisibleTodoList subheader="Tasks' list" />
+        <OpenTodoFormButton />
         <AddTodo />
       </div>
     );

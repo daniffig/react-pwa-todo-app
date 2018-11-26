@@ -10,6 +10,7 @@ export default class Link extends React.Component {
     
     return (
       <ToggleButton
+        value='fede'
         onClick={props.onClick}
         disabled={props.active}
       >
