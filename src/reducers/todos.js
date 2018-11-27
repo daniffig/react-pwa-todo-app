@@ -1,4 +1,17 @@
-const todos = (state = [], action) => {
+const initialState = [
+  {
+    id: 0,
+    text: 'Investigar sobre PWA',
+    completed: true
+  },
+  {
+    id: 1,
+    text: 'Investigar sobre WebAssembly',
+    completed: true
+  }
+]
+
+const todos = (state = initialState, action) => {
   switch(action.type) {
     case 'ADD_TODO':
       return [

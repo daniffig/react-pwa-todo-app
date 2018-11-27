@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 
 import SimpleAppBar from './components/SimpleAppBar';
 import FilterPanel from './components/FilterPanel';
 
-import AddTodo from './containers/AddTodo';
 import VisibleTodoList from './containers/VisibleTodoList';
-import OpenTodoFormButton from './components/OpenTodoFormButton';
+import TodoFormDialogContainer from './containers/TodoFormDialogContainer';
 
 class App extends Component {
   render() {
@@ -15,9 +14,8 @@ class App extends Component {
       <div className="App">
         <SimpleAppBar />
         <FilterPanel />
-        <VisibleTodoList subheader="Tasks' list" />
-        <OpenTodoFormButton />
-        <AddTodo />
+        <VisibleTodoList />
+        <TodoFormDialogContainer />
       </div>
     );
   }

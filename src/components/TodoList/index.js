@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Todo from '../Todo';
 
-import { List, ListSubheader } from '@material-ui/core';
+import List from '@material-ui/core/List';
+
+import Todo from '../Todo';
 
 export default class TodoList extends React.Component {
 
@@ -12,7 +13,6 @@ export default class TodoList extends React.Component {
     return (
       <List
         component="nav"
-        subheader={<ListSubheader component="div">{props.subheader}</ListSubheader>}
       >
         {props.todos.map(todo => (
           <Todo
@@ -33,6 +33,5 @@ TodoList.propTypes = {
       text: PropTypes.string.isRequired
     }).isRequired
   ).isRequired,
-  subheader: PropTypes.string.isRequired,
   toggleTodo: PropTypes.func.isRequired
 }
