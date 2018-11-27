@@ -54,8 +54,8 @@ export default class TodoFormDialog extends React.Component {
           color="primary"
           aria-label="Add To-Do"
           style={{
-            bottom: 2,
-            right: 2,
+            bottom: 10,
+            right: 10,
             cursor: 'pointer',
             position: 'absolute'
           }}
