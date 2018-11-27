@@ -70,7 +70,7 @@ export default class TodoFormDialog extends React.Component {
           <DialogTitle id="todo-form-dialog-title">To-Do Form</DialogTitle>
           <DialogContent>
             <TextField
-              autofocus
+              autoFocus
               margin="dense"
               label="To-Do description"
               value={state.description}
