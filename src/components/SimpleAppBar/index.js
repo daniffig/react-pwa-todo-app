@@ -14,7 +14,7 @@ export default class SimpleAppBar extends React.Component {
       >
         <Toolbar>
           <Typography variant="h6" color="inherit">
-            React PWA To-Do List
+            {this.props.title}
           </Typography>
         </Toolbar>
       </AppBar>
