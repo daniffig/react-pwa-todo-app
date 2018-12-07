@@ -12,7 +12,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <SimpleAppBar title="React PWA To-Do App v1.0" />
+        <SimpleAppBar title="React PWA To-Do App v1.1" />
         <FilterPanel />
         <VisibleTodoList />
         <TodoFormDialogContainer />
